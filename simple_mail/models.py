@@ -52,7 +52,7 @@ class SimpleMailConfig(SingletonModel):
     # footer
     footer_content = SimpleMailRichTextField(config_name="simple_mail_b", verbose_name=_("Footer"), blank=True)
     facebook_url = models.URLField(verbose_name=_("Facebook Url"), max_length=255, blank=True)
-    twitter_url = models.URLField(verbose_name=_("Twitter Url"), max_length=255, blank=True)
+    x_url = models.URLField(verbose_name=_("X/Twitter Url"), max_length=255, blank=True)
     instagram_url = models.URLField(verbose_name=_("Instagram Url"), max_length=255, blank=True)
     website_url = models.URLField(verbose_name=_("Website Url"), max_length=255, blank=True)
     # Colors
@@ -95,7 +95,7 @@ class SimpleMailConfig(SingletonModel):
             'logo_url': self.logo_url,
             'footer_content': self.footer_content,
             'facebook_url': self.facebook_url,
-            'twitter_url': self.twitter_url,
+            'x_url': self.x_url,
             'instagram_url': self.instagram_url,
             'website_url': self.website_url,
             'color_header_bg': self.color_header_bg,
