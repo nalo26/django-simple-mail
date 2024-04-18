@@ -51,7 +51,7 @@ class SimpleMailConfigAdmin(modelAdminClass):
             'fields': ('logo',)
         }),
         ('Footer', {
-            'fields': ('footer_content', 'facebook_url', 'x_url', 'instagram_url', 'website_url',)
+            'fields': ('footer_content', 'facebook_url', 'x_url', 'instagram_url', 'tiktok_url', 'linkedin_url', 'website_url',)
         }),
         ('Colors', {
             'fields': SimpleMailConfig.COLOR_FIELDS,

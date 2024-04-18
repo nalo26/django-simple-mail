@@ -54,6 +54,8 @@ class SimpleMailConfig(SingletonModel):
     facebook_url = models.URLField(verbose_name=_("Facebook Url"), max_length=255, blank=True)
     x_url = models.URLField(verbose_name=_("X/Twitter Url"), max_length=255, blank=True)
     instagram_url = models.URLField(verbose_name=_("Instagram Url"), max_length=255, blank=True)
+    tiktok_url = models.URLField(verbose_name=_("TikTok Url"), max_length=255, blank=True)
+    linkedin_url = models.URLField(verbose_name=_("LinkedIn Url"), max_length=255, blank=True)
     website_url = models.URLField(verbose_name=_("Website Url"), max_length=255, blank=True)
     # Colors
     ## header
@@ -97,6 +99,8 @@ class SimpleMailConfig(SingletonModel):
             'facebook_url': self.facebook_url,
             'x_url': self.x_url,
             'instagram_url': self.instagram_url,
+            'tiktok_url': self.tiktok_url,
+            'linkedin_url': self.linkedin_url,
             'website_url': self.website_url,
             'color_header_bg': self.color_header_bg,
             'color_title': self.color_title,
